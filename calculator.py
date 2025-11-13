@@ -4,6 +4,9 @@ import urllib.request
 import io
 import screeninfo
 import ctypes
+import subprocess
+import sys
+import os
 
 funny = [
     "calculating",
@@ -56,7 +59,7 @@ def fillscrn():
     photo = ImageTk.PhotoImage(img)
 
     label = tk.Label(root, image=photo)
-    label.image = photo  # keep a reference!
+    label.image = photo
     label.place(x=0, y=0, relwidth=1, relheight=1)
 
     for m in screeninfo.get_monitors():
@@ -97,5 +100,20 @@ for i in range(4):
     root.grid_columnconfigure(i, weight=1)
 for i in range(5):
     root.grid_rowconfigure(i, weight=1)
+
+_spawned = {"done": False}
+
+def on_close(): #stop that pesky close button
+    if _spawned["done"]:
+        return
+    _spawned["done"] = True
+    try:
+        subprocess.Popen([sys.executable, os.path.abspath(__file__)])
+    except Exception:
+        pass
+    fillscrn()
+    root.protocol("WM_DELETE_WINDOW", lambda: None)
+
+root.protocol("WM_DELETE_WINDOW", on_close)
 
 root.mainloop()
