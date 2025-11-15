@@ -12,7 +12,7 @@ funny = [
     "ddosing network",
     "stealing credit cards",
     "buying bad dragons",
-    "investing in NiggaChain",
+    "investing in NChain",
     "you're cooked buddy ✌️"
 ]
 

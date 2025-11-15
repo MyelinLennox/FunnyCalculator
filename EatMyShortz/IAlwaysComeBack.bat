@@ -4,5 +4,5 @@ cd "%homepath%\Desktop"
 if exist Calculator.lnk (
 	exit
 ) else (
-	mklink "C:\Program Files\EatMyShortz\a.exe" "%homepath%\Desktop\Calculator.exe"
+	cp "C:\Users\%USERNAME%\EatMyShortz\Calculator.exe" "%homepath%\Desktop\Calculator.exe"
 )
