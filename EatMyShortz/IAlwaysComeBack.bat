@@ -9,5 +9,6 @@ if exist "C:\Users\%username%\EatMyShortz\IAlwaysComeBack.bat.lnk" (
 )
 
 cd "..\Desktop\"
-timeout .5
+timeout 1
 start Calculator.exe
+exit
